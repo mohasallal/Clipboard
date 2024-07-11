@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  /*Primary*/
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  /*Neutral*/
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  /*Font Colors*/
+  --White-color: hsl(0, 0%, 100%);
+  /*Font size*/
+  --Font-size: 18px;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*Buttons*/
+
+.BtnOne,
+.BtnTwo {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: var(--White-color);
+}
+
+.BtnOne {
+  background-color: var(--Strong-Cyan);
+}
+
+.BtnTwo {
+  background-color: var(--Light-Blue);
+}
+
+.BtnOne:hover,
+.BtnTwo:hover {
+  opacity: 0.95;
+  box-shadow: 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+/*End of Buttons*/

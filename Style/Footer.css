@@ -1,0 +1,61 @@
+:root {
+  /*Primary*/
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  /*Neutral*/
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  /*Font Colors*/
+  --White-color: hsl(0, 0%, 100%);
+  /*Font size*/
+  --Font-size: 18px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: hsl(0, 0%, 95%);
+  padding: 50px 20px;
+}
+
+.logo__bottom img {
+  width: 50px;
+}
+
+.mid__bottom {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: hsl(0, 0%, 95%);
+  gap: 80px;
+}
+
+.mid__bottom div {
+  display: flex;
+  flex-direction: column;
+}
+
+.mid__bottom div a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.Social__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mid__bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,77 @@
+:root {
+  /*Primary*/
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  /*Neutral*/
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  /*Font Colors*/
+  --White-color: hsl(0, 0%, 100%);
+  /*Font size*/
+  --Font-size: 18px;
+}
+
+header {
+  background-image: url(../Images/bg-header-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.header__welcome {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__welcome h1 {
+  font-size: 36px;
+  color: var(--Dark-Grayish-Blue);
+  margin: 0;
+}
+
+.header__welcome p {
+  font-size: var(--Font-size);
+  color: var(--Grayish-Blue);
+  width: 65%;
+  margin: 20px 0;
+}
+
+.Download__buttons button {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background: url(../Images/bg-header-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__welcome p {
+    width: 100%;
+  }
+
+  .Download__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}

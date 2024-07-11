@@ -1,0 +1,211 @@
+:root {
+  /*Primary*/
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  /*Neutral*/
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  /*Font Colors*/
+  --White-color: hsl(0, 0%, 100%);
+  /*Font size*/
+  --Font-size: 18px;
+}
+
+/*Start of Welcome*/
+
+.main__startTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__startTitle h2 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.main__startTitle p {
+  font-size: var(--Font-size);
+  font-weight: 400;
+  color: var(--Dark-Grayish-Blue);
+  width: 65%;
+}
+
+/*End of Welcome*/
+
+/*Main Features*/
+.main__features {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 100px 0;
+}
+
+.left__features {
+  width: 50%;
+  position: relative;
+  left: -55px;
+}
+
+.left__features img {
+  width: 100%;
+}
+
+.right__features {
+  width: 35%;
+  height: auto;
+}
+
+/*End of Main Features*/
+
+/*Features*/
+
+.features h3 {
+  font-size: 30px;
+  color: var(--Dark-Grayish-Blue);
+  margin: 0;
+}
+
+.features p {
+  color: var(--Grayish-Blue);
+  font-size: var(--Font-size);
+  width: 65%;
+}
+
+/*End of Features*/
+
+/*Mid main*/
+.main__midTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.main__midTitle h2 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.main__midTitle p {
+  font-size: var(--Font-size);
+  font-weight: 400;
+  color: var(--Dark-Grayish-Blue);
+  width: 50%;
+}
+
+.mid__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid__image img {
+  width: 100%;
+  max-width: 900px;
+}
+/*End of mid main*/
+
+/*Abilities*/
+.Abilities {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Ability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  aspect-ratio: 1/1;
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.Ability h3 {
+  margin: 10px 0;
+}
+/*End of Abilities*/
+
+/*Companies*/
+.Companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+/*End of Companies*/
+
+.last__per {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__startTitle p {
+    width: 90%;
+  }
+
+  .main__features {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left__features {
+    width: 80%;
+    left: 0;
+    margin: 0 0 100px;
+  }
+
+  .right__features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__midTitle p {
+    width: 90%;
+  }
+
+  .Abilities {
+    flex-direction: column;
+  }
+
+  .Ability {
+    aspect-ratio: 0;
+    margin-bottom: 50px;
+  }
+
+  .Companies {
+    flex-direction: column;
+    gap: 50px;
+    margin: 20px 0;
+  }
+}
